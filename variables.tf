@@ -156,3 +156,9 @@ variable "local_ip" {
   default     = "http://ipv4.icanhazip.com"
   type        = string
 }
+
+variable "auto_minor_version_upgrade" {
+  description = "Determines whether minor engine upgrades will be performed automatically in the maintenance window for aurora db"
+  type        = bool
+  default     = false
+}
