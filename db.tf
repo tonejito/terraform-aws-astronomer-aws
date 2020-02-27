@@ -16,7 +16,7 @@ module "aurora" {
   # source         = "./modules/terraform-aws-rds-aurora"
   name                       = "astrodb-${random_id.db_name_suffix.hex}"
   engine                     = "aurora-postgresql"
-  engine_version             = "10.6"
+  engine_version             = "11.6"
   auto_minor_version_upgrade = var.auto_minor_version_upgrade
 
   subnets = local.database_subnets
