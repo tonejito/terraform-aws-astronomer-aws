@@ -153,3 +153,15 @@ variable "local_ip" {
   default     = "http://ipv4.icanhazip.com"
   type        = string
 }
+
+variable "engine_version" {
+  description = "Aurora database engine version."
+  type        = string
+  default     = "10.7"
+}
+
+variable "auto_minor_version_upgrade" {
+  description = "Determines whether minor engine upgrades for Aurora RDS will be performed automatically in the maintenance window"
+  type        = bool
+  default     = false
+}
